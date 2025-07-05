@@ -12,7 +12,6 @@
     "256": "assets/icons/icon256.png"
   },
   "permissions": ["activeTab", "scripting"],
-  "optional_host_permissions": ["https://*/*"],
   "background": {
     "service_worker": "src/background/background.js"
   },
