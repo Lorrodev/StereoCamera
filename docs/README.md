@@ -51,13 +51,13 @@ StereoCamera respects your privacy:
 - **No data collection** or user tracking
 - **Local processing** - all images processed in your browser
 - **No external servers** - everything works offline
-- See our [Privacy Policy](PRIVACY_POLICY.md) for details
+- See [Privacy Policy](PRIVACY_POLICY.md) for details
 
-## 📄 License
+## License
 
 This project is licensed under the GPL-3.0 License - see the [LICENSE](LICENSE) file for details.
 
-## 🤝 Contributing
+## Contributing
 
 1. Fork the repository
 2. Create your feature branch (`git checkout -b feature/amazing-feature`)
@@ -65,7 +65,7 @@ This project is licensed under the GPL-3.0 License - see the [LICENSE](LICENSE) 
 4. Push to the branch (`git push origin feature/amazing-feature`)
 5. Open a Pull Request
 
-## 📞 Support
+## Bug Reports
 
 - Create an [issue](https://github.com/Lorrodev/StereoCamera/issues) for bug reports
 - Check existing issues before creating new ones
