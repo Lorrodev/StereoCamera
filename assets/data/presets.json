@@ -1,0 +1,29 @@
+{
+  "googleMaps": {
+    "name": "Google Maps",
+    "strafeMethod": "leftMouseDrag",
+    "rotationMethod": "shiftMouseDrag",
+    "defaultStrafeAmount": 25,
+    "defaultRotationAmount": -15,
+    "defaultScaleFactor": 1.0,
+    "urlKeywords": ["google.com/maps", "google.com", "maps"]
+  },
+  "noclip": {
+    "name": "noclip - Use low camera speed!",
+    "strafeMethod": "wasdKeys",
+    "rotationMethod": "leftMouseDrag",
+    "defaultStrafeAmount": 20,
+    "defaultRotationAmount": -12,
+    "defaultScaleFactor": 1.0,
+    "urlKeywords": ["noclip.website", "noclip"]
+  },
+  "sketchfab": {
+    "name": "Sketchfab",
+    "strafeMethod": "shiftMouseDrag",
+    "rotationMethod": "leftMouseDrag",
+    "defaultStrafeAmount": 10,
+    "defaultRotationAmount": -10,
+    "defaultScaleFactor": 0.98,
+    "urlKeywords": ["sketchfab.com", "sketchfab"]
+  }
+}

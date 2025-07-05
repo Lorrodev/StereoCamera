@@ -1,0 +1,231 @@
+#stereocamera-floating-ui {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 10000;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  background-color: #1f1f1f;
+  padding: 15px;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  width: 300px;
+  display: none;
+  box-sizing: border-box;
+  color: white;
+}
+
+#stereocamera-floating-ui .title {
+  text-align: center;
+  margin-bottom: 15px;
+  font-weight: bold;
+  color: white;
+  font-size: 16px;
+}
+
+#stereocamera-floating-ui .control-group {
+  margin-bottom: 15px;
+}
+
+#stereocamera-floating-ui label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+#stereocamera-floating-ui input[type="range"] {
+  width: 100%;
+  accent-color: #8359d9;
+}
+
+#stereocamera-floating-ui select {
+  width: 100%;
+  padding: 6px;
+  border: 1px solid #1a1a1a;
+  border-radius: 4px;
+  font-size: 13px;
+  background: #424242;
+  cursor: pointer;
+  color: white;
+}
+
+#stereocamera-floating-ui select:hover {
+  border-color: #8359d9;
+}
+
+#stereocamera-floating-ui select:focus {
+  border-color: #8359d9;
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(66, 133, 244, 0.2);
+}
+
+#stereocamera-floating-ui .capture-btn {
+  width: 100%;
+  padding: 10px;
+  background: #8359d9;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+#stereocamera-floating-ui .capture-btn:hover {
+  background: #5f3fa1;
+}
+
+#stereocamera-floating-ui .capture-btn:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
+#stereocamera-floating-ui .swap-btn {
+  width: 100%;
+  padding: 8px;
+  background: #666;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 13px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-bottom: 8px;
+}
+
+#stereocamera-floating-ui .swap-btn:hover {
+  background: #555;
+}
+
+#stereocamera-floating-ui .swap-btn:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
+#stereocamera-floating-ui .close-btn {
+  position: absolute;
+  top: 12px;
+  right: 10px;
+  width: 22px;
+  height: 22px;
+  padding: 0;
+  background: #f8f9fa;
+  color: #5f6368;
+  border: 1px solid #dadce0;
+  border-radius: 50%;
+  font-size: 12px;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+}
+
+#stereocamera-floating-ui .close-btn:hover {
+  background: #f1f3f4;
+  color: #d93025;
+  border-color: #d93025;
+}
+
+#stereocamera-floating-ui .status {
+  margin-top: 10px;
+  padding: 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  text-align: center;
+  display: none;
+}
+
+#stereocamera-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 20000;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, sans-serif;
+}
+
+#stereocamera-modal .modal-content {
+  background: #1f1f1f;
+  border-radius: 12px;
+  padding: 20px;
+  max-width: 50vw;
+  max-height: 50vh;
+  overflow: auto;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.6);
+  color: white;
+  text-align: center;
+}
+
+#stereocamera-modal .modal-header {
+  margin-bottom: 20px;
+}
+
+#stereocamera-modal .modal-title {
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  margin: 0 0 10px 0;
+}
+
+#stereocamera-modal .modal-image {
+  margin: 20px 0;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#stereocamera-modal .modal-image img {
+  max-width: 100%;
+  max-height: 35vh;
+  width: auto;
+  height: auto;
+  display: block;
+  object-fit: contain;
+}
+
+#stereocamera-modal .modal-buttons {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+#stereocamera-modal .modal-btn {
+  padding: 12px 24px;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+#stereocamera-modal .download-btn {
+  background: #8359d9;
+  color: white;
+}
+
+#stereocamera-modal .download-btn:hover {
+  background: #5f3fa1;
+}
+
+#stereocamera-modal .cancel-btn {
+  background: #666;
+  color: white;
+}
+
+#stereocamera-modal .cancel-btn:hover {
+  background: #555;
+}

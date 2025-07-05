@@ -1,0 +1,78 @@
+<link rel="stylesheet" href="floating-ui.css" />
+<div id="stereocamera-floating-ui">
+  <button id="close-btn" class="close-btn">✖</button>
+  <div class="title">📷 StereoCamera</div>
+  <div class="control-group">
+    <label>Preset:</label>
+    <select id="preset-select">
+      <!-- Presets will be loaded dynamically from presets.json -->
+    </select>
+  </div>
+
+  <div class="control-group">
+    <label>Strafe Method:</label>
+    <select id="strafe-method">
+      <option value="leftMouseDrag">Left Mouse Drag</option>
+      <option value="shiftMouseDrag">Left Mouse Drag + Shift</option>
+      <option value="rightMouseDrag">Right Mouse Drag</option>
+      <option value="arrowKeys">Arrow Keys</option>
+      <option value="wasdKeys">WASD Keys</option>
+    </select>
+  </div>
+
+  <div class="control-group">
+    <label>Rotation Method:</label>
+    <select id="rotation-method">
+      <option value="leftMouseDrag">Left Mouse Drag</option>
+      <option value="shiftMouseDrag">Left Mouse Drag + Shift</option>
+      <option value="rightMouseDrag">Right Mouse Drag</option>
+      <option value="arrowKeys">Arrow Keys</option>
+      <option value="wasdKeys">WASD Keys</option>
+    </select>
+  </div>
+
+  <div class="control-group">
+    <label>Scale: <span id="scale-value">1.00</span>x </label>
+    <input
+      type="range"
+      id="scale-slider"
+      min="0.5"
+      max="1.0"
+      step="0.01"
+      value="1.00"
+    />
+  </div>
+
+  <div class="control-group">
+    <label>Strafe Amount: <span id="strafe-value">-25</span> </label>
+    <input type="range" id="strafe-slider" min="-50" max="50" value="-25" />
+  </div>
+
+  <div class="control-group">
+    <label>Rotation Amount: <span id="rotation-value">15</span> </label>
+    <input type="range" id="rotation-slider" min="-50" max="50" value="15" />
+  </div>
+
+  <button id="swap-btn" class="swap-btn">🔄 Swap L | R</button>
+
+  <button id="capture-btn" class="capture-btn">Capture Image</button>
+
+  <div id="status" class="status"></div>
+</div>
+
+<div id="stereocamera-modal">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h2 class="modal-title">📷 Preview</h2>
+    </div>
+    <div class="modal-image">
+      <img id="modal-preview-image" src="" alt="Stereoscopic Preview" />
+    </div>
+    <div class="modal-buttons">
+      <button id="modal-download-btn" class="modal-btn download-btn">
+        Download
+      </button>
+      <button id="modal-cancel-btn" class="modal-btn cancel-btn">Cancel</button>
+    </div>
+  </div>
+</div>

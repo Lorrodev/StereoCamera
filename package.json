@@ -1,0 +1,34 @@
+{
+  "name": "stereocamera-chrome-extension",
+  "version": "1.0.0",
+  "description": "Chrome extension for creating stereoscopic images from 3D online applications",
+  "keywords": [
+    "chrome-extension",
+    "google-maps",
+    "noclip",
+    "sketchfab",
+    "stereoscopic",
+    "3d",
+    "photography"
+  ],
+  "author": "Lorrodev",
+  "license": "GPL-3.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Lorrodev/StereoCamera"
+  },
+  "browser": "chrome",
+  "manifest_version": 3,
+  "files": [
+    "manifest.json",
+    "popup.html",
+    "popup.js",
+    "content.js",
+    "background.js"
+  ],
+  "devDependencies": {},
+  "dependencies": {},
+  "engines": {
+    "chrome": ">=88.0.0"
+  }
+}

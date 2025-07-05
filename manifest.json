@@ -1,0 +1,47 @@
+{
+  "manifest_version": 3,
+  "name": "StereoCamera: Create Stereoscopic Images",
+  "version": "1.0.0",
+  "description": "Create stereoscopic images from Google Maps, noclip and Sketchfab.",
+  "homepage_url": "https://github.com/Lorrodev/StereoCamera",
+  "icons": {
+    "16": "assets/icons/icon16.png",
+    "32": "assets/icons/icon32.png",
+    "48": "assets/icons/icon48.png",
+    "128": "assets/icons/icon128.png"
+  },
+  "permissions": ["activeTab", "scripting"],
+  "optional_host_permissions": ["https://*/*"],
+  "background": {
+    "service_worker": "src/background/background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "*://noclip.website/*",
+        "*://www.google.com/*",
+        "*://sketchfab.com/*"
+      ],
+      "js": ["src/content/image-processor.js", "src/content/stereo.js"]
+    }
+  ],
+  "action": {
+    "default_popup": "src/popup/popup.html",
+    "default_title": "StereoCamera"
+  },
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "src/components/floating-ui/floating-ui.css",
+        "src/components/viewfinder/viewfinder.css",
+        "src/components/floating-ui/floating-ui.html",
+        "assets/data/presets.json"
+      ],
+      "matches": [
+        "*://noclip.website/*",
+        "*://www.google.com/*",
+        "*://sketchfab.com/*"
+      ]
+    }
+  ]
+}
