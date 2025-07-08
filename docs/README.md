@@ -6,7 +6,7 @@ A Chrome extension for creating stereoscopic images from 3D web applications.
 
 ### From Chrome Web Store
 
-[Install StereoCamera](https://chromewebstore.google.com/detail/stereocamera-create-stere/fojldibigbcpmamlladnfgiegbjehkag?hl=en) (Coming Soon)
+[Install StereoCamera](https://chromewebstore.google.com/detail/stereocamera-create-stere/fojldibigbcpmamlladnfgiegbjehkag?hl=en)
 
 ### Manual Installation
 
